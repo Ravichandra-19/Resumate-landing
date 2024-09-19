@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const App = () => {
   const [name, setName] = useState('');
@@ -23,6 +24,9 @@ const App = () => {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
+      <Helmet>
+        <title>ResumateV0</title>
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         <section className="text-center py-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Craft the Perfect Resume with AI</h1>
